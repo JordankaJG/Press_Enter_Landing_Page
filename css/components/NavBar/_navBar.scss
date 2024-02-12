@@ -1,0 +1,28 @@
+@use "../../abstracts/variables" as var;
+
+@use "sass:math";
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 101;
+}
+
+.nav {
+  padding: math.div(var.$gutter-base, 2);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  .navbar {
+    @media (max-width: 425px) {
+      z-index: 999 !important;
+    }
+  }
+  li {
+    list-style: none;
+    font-weight: var.$font-weight-bold;
+    color: var.$text-color-primary;
+    padding: math.div(var.$gutter-base, 2);
+  }
+  li:first-child {
+    color: var.$background-color-secondary;
+  }
+}

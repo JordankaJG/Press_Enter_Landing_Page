@@ -1,0 +1,33 @@
+@use "../../abstracts/variables" as var;
+
+@use "sass:math";
+
+.footer_top_part {
+  background-color: var.$background-footer-color-primary;
+
+  h2,
+  p {
+    color: var.$text-color-base;
+  }
+  hr {
+    color: var.$text-color-base;
+  }
+}
+
+.footer_bottom_part {
+  background-color: var.$background-footer-color-secondary;
+  h6 {
+    color: var.$text-footer-color-secondary;
+    font-weight: var.$font-weight-base;
+  }
+  span {
+    font-weight: var.$font-weight-base;
+  }
+  p {
+    font-weight: var.$font-weight-smaller;
+    color: var.$text-color-base;
+  }
+  hr {
+    color: var.$text-color-base;
+  }
+}

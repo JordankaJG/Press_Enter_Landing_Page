@@ -1,0 +1,17 @@
+@use "../../abstracts/variables" as var;
+
+@use "sass:math";
+
+.company_numbers {
+  position: relative;
+  height: 70vh;
+  background-image: url("../img/Company_numbers_Images/Valleta_image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width:425px){
+    height: 40vh;
+  }
+ 
+
+
+}

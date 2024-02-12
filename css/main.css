@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+  color: #000;
+  margin-bottom: 0.9375rem;
+  line-height: 1;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 101;
+}
+
+.nav {
+  padding: 0.9375rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 425px) {
+  .nav .navbar {
+    z-index: 999 !important;
+  }
+}
+.nav li {
+  list-style: none;
+  font-weight: 600;
+  color: #000;
+  padding: 0.9375rem;
+}
+.nav li:first-child {
+  color: #3c53e5;
+}
+
+button.owl-dot {
+  display: none;
+}
+
+.owl-nav {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 90%;
+}
+@media (max-width: 425px) {
+  .owl-nav {
+    top: 5.625rem !important;
+  }
+}
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+  font-size: 9.375rem !important;
+  color: rgba(212, 212, 212, 0.8588235294) !important;
+}
+@media (max-width: 425px) {
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    font-size: 6.25rem !important;
+  }
+}
+@media (max-width: 320px) {
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    font-size: 3.125rem !important;
+  }
+}
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+  background-color: transparent !important;
+}
+
+.liner-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  height: 169px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 254, 249, 0) 0%, #ffffff 100%);
+  z-index: 100;
+}
+@media (max-width: 425px) {
+  .liner-gradient {
+    height: 90px;
+  }
+}
+
+.overlaping_section {
+  background-color: #f9f9f9;
+}
+.overlaping_section .inner {
+  overflow: hidden;
+}
+.overlaping_section .inner img {
+  height: auto;
+  max-width: 100%;
+  transition: all 0.4s;
+  transform: scale(1);
+}
+.overlaping_section .inner img:hover {
+  scale: 1.1;
+}
+.overlaping_section .overlaped-container {
+  margin-top: -50px;
+  z-index: 100;
+}
+
+.company_numbers {
+  position: relative;
+  height: 70vh;
+  background-image: url("../img/Company_numbers_Images/Valleta_image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 425px) {
+  .company_numbers {
+    height: 40vh;
+  }
+}
+
+.our_brands {
+  background-color: #f9f9f9;
+}
+
+.footer_top_part {
+  background-color: #000000;
+}
+.footer_top_part h2,
+.footer_top_part p {
+  color: #ffffff;
+}
+.footer_top_part hr {
+  color: #ffffff;
+}
+
+.footer_bottom_part {
+  background-color: #17161a;
+}
+.footer_bottom_part h6 {
+  color: #6a696c;
+  font-weight: 400;
+}
+.footer_bottom_part span {
+  font-weight: 400;
+}
+.footer_bottom_part p {
+  font-weight: 100;
+  color: #ffffff;
+}
+.footer_bottom_part hr {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=main.css.map */

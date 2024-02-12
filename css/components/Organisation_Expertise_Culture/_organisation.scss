@@ -1,0 +1,29 @@
+@use "../../abstracts/variables" as var;
+
+@use "sass:math";
+
+
+
+.overlaping_section {
+  background-color: var.$background-color-ternary;
+
+  .inner {
+    overflow: hidden;
+    img {
+
+      height: auto;
+      max-width: 100%;
+      transition: all 0.4s;
+      transform: scale(1);
+
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+
+.overlaped-container{
+  margin-top: -50px;
+  z-index: 100;
+}
+}

@@ -1,0 +1,49 @@
+@use "../../abstracts/variables" as var;
+
+@use "sass:math";
+
+button.owl-dot {
+  display: none;
+}
+
+.owl-nav {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 90%;
+  @media (max-width: 425px) {
+    top: var.$gutter-base * 3 !important;
+  }
+
+  .owl-prev,
+  .owl-next {
+    font-size: var.$heading-size-bigger * 3 !important;
+    color: var.$text-color-ternary !important;
+    @media (max-width: 425px) {
+      font-size: var.$heading-size-bigger * 2 !important;
+    }
+    @media (max-width: 320px) {
+      font-size: var.$heading-size-bigger !important;
+    }
+
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+}
+
+.liner-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  height: 169px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 254, 249, 0) 0%, #ffffff 100%);
+  z-index: 100;
+  @media (max-width: 425px) {
+    height: 90px;
+  }
+}
